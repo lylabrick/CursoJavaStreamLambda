@@ -31,5 +31,13 @@ public class MiHaspMapExample {
         for (Map.Entry<String, Integer> entry : stock.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
+
+        System.out.println(hashSimple(7));   // 7
+        System.out.println(hashSimple(17));  // 7
+        System.out.println(hashSimple(127));
+    }
+
+    private static int hashSimple(int x) {
+        return x % 10;
     }
 }
